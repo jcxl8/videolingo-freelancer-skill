@@ -1,4 +1,10 @@
+<div align="center">
+
+<img src="docs/logo.png" alt="VideoLingo-Freelancer Logo" height="140">
+
 # VideoLingo-Freelancer
+
+</div>
 
 > 用一句自然语言，让 Codex、Claude Code 或 OpenClaw 操作你已有的 VideoLingo-Freelancer：下载视频、转录、翻译、质检、烧录字幕、配音和归档。
 >

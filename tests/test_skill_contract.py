@@ -10,6 +10,16 @@ SKILL = ROOT / "SKILL.md"
 
 
 class SkillContractTests(unittest.TestCase):
+    def test_readme_starts_with_shared_logo(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        logo = ROOT / "docs" / "logo.png"
+
+        self.assertTrue(logo.is_file())
+        self.assertTrue(readme.startswith('<div align="center">\n\n<img src="docs/logo.png"'))
+        self.assertLess(readme.index('docs/logo.png'), readme.index("# VideoLingo-Freelancer"))
+        self.assertIn('alt="VideoLingo-Freelancer Logo"', readme)
+        self.assertIn('height="140"', readme)
+
     def test_readme_is_bilingual_and_accurate(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         required = (
