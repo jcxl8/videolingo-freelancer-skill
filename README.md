@@ -2,7 +2,7 @@
 
 <img src="docs/logo.png" alt="VideoLingo-Freelancer Logo" height="140">
 
-# VideoLingo-Freelancer
+# VideoLingo-Freelancer-Skill
 
 </div>
 
