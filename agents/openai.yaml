@@ -1,0 +1,4 @@
+interface:
+  display_name: "VideoLingo-Freelancer"
+  short_description: "Run and verify a customized video translation workflow"
+  default_prompt: "Use $videolingo-freelancer to run or diagnose this VideoLingo-Freelancer workflow."
