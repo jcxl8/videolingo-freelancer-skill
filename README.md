@@ -4,7 +4,7 @@
 >
 > Use one natural-language request to let Codex, Claude Code, or OpenClaw operate your existing VideoLingo-Freelancer workflow: download, transcribe, translate, proofread, render, dub, and archive.
 
-**语言 / Language：** [中文](#中文) ｜ [English](#english)
+**Language:** [English](#english)｜[简体中文](translations/README.zh.md)｜[Español](translations/README.es.md)｜[Русский](translations/README.ru.md)｜[Français](translations/README.fr.md)｜[Deutsch](translations/README.de.md)｜[Italiano](translations/README.it.md)｜[日本語](translations/README.ja.md)
 
 这是一个遵循 [AgentSkills](https://agentskills.io) 标准的 **AI Agent Skill**，核心是 `SKILL.md + CLI 编排器`。它没有 GUI，也不包含 VideoLingo 应用源码；它负责可靠地操作已经安装和配置好的 VideoLingo-Freelancer 定制版。
 

@@ -52,6 +52,33 @@ class SkillContractTests(unittest.TestCase):
             readme,
         )
 
+    def test_complete_localized_readmes_are_published(self):
+        root_readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        languages = ("zh", "es", "ru", "fr", "de", "it", "ja")
+        required = (
+            "VideoLingo-Freelancer",
+            "https://github.com/jcxl8/videolingo-freelancer-skill.git",
+            "https://github.com/jcxl8/VideoLingo-freelancer",
+            "Codex",
+            "Claude Code",
+            "OpenClaw",
+            "doctor",
+            "proofread",
+            "large-v3",
+            "--watermark-text",
+            "LICENSE",
+        )
+
+        for code in languages:
+            relative = f"translations/README.{code}.md"
+            self.assertIn(relative, root_readme)
+            page = ROOT / relative
+            self.assertTrue(page.is_file(), relative)
+            text = page.read_text(encoding="utf-8")
+            for item in required:
+                with self.subTest(language=code, item=item):
+                    self.assertIn(item, text)
+
     def test_frontmatter_is_portable(self):
         text = SKILL.read_text(encoding="utf-8")
         frontmatter = text.split("---", 2)[1]
