@@ -55,7 +55,7 @@ Use `--watermark-text "Nombre"` o `--no-watermark`. Códigos: `0` completado, `2
 
 ## Seguridad de GitHub y FAQ
 
-No publique configuración, claves API, cookies, salidas, historial, modelos, registros ni medios. Si no encuentra la aplicación, use `--repo` o `VIDEOLINGO_FREELANCER_HOME`. Con código 5, corrija el informe y repita `proofread`; no omita el control. Streamlit no es obligatorio.
+No publique configuración, claves API, cookies, salidas, historial, modelos, registros ni medios. Si no encuentra la aplicación, use `--repo` o `VIDEOLINGO_FREELANCER_HOME`. Con código 5, corrija el informe y repita `proofread`; no omita el control. Streamlit no es obligatorio. Para iniciar automáticamente la aplicación o Hy-MT2 con macOS LaunchAgent, consulte la [guía macOS LaunchAgent](https://github.com/jcxl8/VideoLingo-freelancer/blob/main/docs/macos-launch-agent.md).
 
 ## LICENSE
 

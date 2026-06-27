@@ -254,6 +254,10 @@ MLX 可利用 Apple Silicon/Metal。Linux 和 Windows 则默认使用本地 Whis
 
 不需要。Skill 以 CLI 为主；Streamlit 是 VideoLingo-Freelancer 应用本体的可选界面。
 
+**可以用 macOS LaunchAgent 自动启动应用吗？**
+
+可以，但这是应用本体的部署方式，不是 Skill 的必要条件。需要开机或登录后自动启动 VideoLingo-Freelancer / Hy-MT2 服务时，请参考应用仓库的 [macOS LaunchAgent 指南](https://github.com/jcxl8/VideoLingo-freelancer/blob/main/docs/macos-launch-agent.md)。Skill 本身仍然以 CLI 调用为主，不依赖 Streamlit 或 LaunchAgent。
+
 **可以直接操作普通 Huanshere/VideoLingo 吗？**
 
 不可以。本 Skill 依赖定制版模块并会主动拒绝缺少标记文件的仓库。
@@ -481,6 +485,10 @@ Read the JSON/Markdown proofread report, correct timing/count/bilingual consiste
 **Does this Skill require Streamlit?**
 
 No. The Skill is CLI-first. Streamlit belongs to the VideoLingo-Freelancer application and remains an optional manual interface.
+
+**Can the application start automatically with macOS LaunchAgent?**
+
+Yes, but that is an application deployment choice, not a Skill requirement. If you want VideoLingo-Freelancer or a Hy-MT2 local service to start after macOS login, see the application repository's [macOS LaunchAgent guide](https://github.com/jcxl8/VideoLingo-freelancer/blob/main/docs/macos-launch-agent.md). The Skill itself remains CLI-first and does not depend on Streamlit or LaunchAgent.
 
 **Can it operate an ordinary Huanshere/VideoLingo checkout?**
 

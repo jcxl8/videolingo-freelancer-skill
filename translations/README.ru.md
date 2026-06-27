@@ -55,7 +55,7 @@ Linux / Windows → WhisperX → large-v3
 
 ## Безопасность GitHub и FAQ
 
-Не публикуйте конфигурацию, API-ключи, cookies, результаты, историю, модели, журналы или медиа. Для поиска приложения задайте `--repo` или `VIDEOLINGO_FREELANCER_HOME`. При коде 5 исправьте отчёт и повторите `proofread`. Streamlit не требуется.
+Не публикуйте конфигурацию, API-ключи, cookies, результаты, историю, модели, журналы или медиа. Для поиска приложения задайте `--repo` или `VIDEOLINGO_FREELANCER_HOME`. При коде 5 исправьте отчёт и повторите `proofread`. Streamlit не требуется. Для автозапуска приложения или Hy-MT2 через macOS LaunchAgent см. [руководство macOS LaunchAgent](https://github.com/jcxl8/VideoLingo-freelancer/blob/main/docs/macos-launch-agent.md).
 
 ## LICENSE
 

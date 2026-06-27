@@ -62,6 +62,18 @@ class SkillContractTests(unittest.TestCase):
             readme,
         )
 
+    def test_readme_points_app_autostart_to_application_docs(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        required = (
+            "macOS LaunchAgent",
+            "https://github.com/jcxl8/VideoLingo-freelancer/blob/main/docs/macos-launch-agent.md",
+            "Skill 本身仍然以 CLI 调用为主",
+            "The Skill itself remains CLI-first",
+        )
+        for item in required:
+            with self.subTest(item=item):
+                self.assertIn(item, readme)
+
     def test_complete_localized_readmes_are_published(self):
         root_readme = (ROOT / "README.md").read_text(encoding="utf-8")
         languages = ("zh", "es", "ru", "fr", "de", "it", "ja")
@@ -77,6 +89,7 @@ class SkillContractTests(unittest.TestCase):
             "large-v3",
             "--watermark-text",
             "LICENSE",
+            "https://github.com/jcxl8/VideoLingo-freelancer/blob/main/docs/macos-launch-agent.md",
         )
 
         for code in languages:
